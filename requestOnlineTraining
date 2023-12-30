@@ -1,0 +1,9 @@
+<section id="request">
+      <h2>Request Training</h2>
+      <!-- Request training form -->
+      <form>
+        <label for="training-topic">Training Topic:</label>
+        <input type="text" id="training-topic" name="training-topic" required>
+        <button type="submit">Submit Request</button>
+      </form>
+</section>
