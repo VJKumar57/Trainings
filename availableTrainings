@@ -1,0 +1,10 @@
+    <section id="trainings">
+      <h1>Available Trainings</h1>
+      <!-- List of available trainings -->
+      <ul>
+        <li>Training 1</li>
+        <li>Training 2</li>
+        <li>Training 3</li>
+        <!-- Add more trainings as needed -->
+      </ul>
+    </section>
