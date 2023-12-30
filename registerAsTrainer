@@ -1,0 +1,11 @@
+<section id="register">
+      <h2>Register as Trainer</h2>
+      <!-- Trainer registration form -->
+      <form>
+        <label for="trainer-name">Your Name:</label>
+        <input type="text" id="trainer-name" name="trainer-name" required>
+        <label for="trainer-expertise">Areas of Expertise:</label>
+        <input type="text" id="trainer-expertise" name="trainer-expertise" required>
+        <button type="submit">Register as Trainer</button>
+      </form>
+    </section>
