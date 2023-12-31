@@ -1,12 +1,88 @@
+<!-- FILEPATH: /Users/vjsrinivasan/Projects/Trainings/registerAsTrainer.html -->
 <section id="register">
-      <h2>Register as Trainer</h2>
-      <!-- Trainer registration form -->
-      <a href="index.html">go back</a>
-      <form>
-        <label for="trainer-name">Your Name:</label>
-        <input type="text" id="trainer-name" name="trainer-name" required>
-        <label for="trainer-expertise">Areas of Expertise:</label>
-        <input type="text" id="trainer-expertise" name="trainer-expertise" required>
-        <button type="submit">Register as Trainer</button>
-      </form>
-    </section>
+  <h1>Register as Trainer</h1>
+  <!-- Trainer registration form -->
+  <a href="index.html">go back</a>
+
+  <p>
+    Please fill out the form below to register as a trainer. Once you have
+    registered, you will be able to create new trainings and add them to our
+    portal.
+  </p>
+
+  <h2>Day Selection</h2>
+
+  <div class="day-selector">
+    <!-- Day buttons go here -->
+    <button data-day="Monday">Monday</button>
+    <button data-day="Tuesday">Tuesday</button>
+    <button data-day="Wednesday">Wednesday</button>
+    <button data-day="Thursday">Thursday</button>
+    <button data-day="Friday">Friday</button>
+    <button data-day="Saturday">Saturday</button>
+    <button data-day="Sunday">Sunday</button>
+  </div>
+  <div class="selected-days">
+    <h3>Choose Days</h3>
+    <ul id="selected-days-list"></ul>
+  </div>
+
+  <p><strong>Note:</strong> All fields are required.</p>
+
+  <form>
+    <label for="trainer-name">Your Name:</label>
+    <input type="text" id="trainer-name" name="trainer-name" required /> <br />
+    <label for="trainer-expertise">Areas of Expertise:</label>
+    <input
+      type="text"
+      id="trainer-expertise"
+      name="trainer-expertise"
+      required
+    />
+    <br />
+    <label for="available-days">Available days:</label>
+    <select id="available-days" name="available-days" required multiple>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select>
+    <br />
+
+    <label for="total-available-hours">Total Available hours:</label>
+    <select id="total-available-hours" name="total-available-hours" required>
+      <option value="10">10 hours</option>
+      <option value="20">20 hours</option>
+      <option value="30">30 hours</option>
+      <option value="40">40 hours</option>
+    </select>
+    <br />
+    <label for="start-time">Start Time:</label>
+    <input type="time" id="start-time" name="start-time" required />
+    <select id="start-time-period" name="start-time-period">
+      <option value="AM">AM</option>
+      <option value="PM">PM</option>
+    </select>
+
+    <label for="end-time">End Time:</label>
+    <input type="time" id="end-time" name="end-time" required />
+    <select id="end-time-period" name="end-time-period">
+      <option value="AM">AM</option>
+      <option value="PM">PM</option>
+    </select>
+    <br /><label for="trainer-email">Email:</label>
+    <input type="email" id="trainer-email" name="trainer-email" required />
+    <br />
+    <label for="trainer-phone">Phone:</label>
+    <input type="tel" id="trainer-phone" name="trainer-phone" required />
+    <br /><label for="trainer-address">Address:</label>
+    <input type="text" id="trainer-address" name="trainer-address" required />
+    <br />
+    <br />
+    <br />
+    <button type="submit">Register as Trainer</button>   <p>         </p> <input type="reset" value="Reset" />
+  </form>
+</section>
